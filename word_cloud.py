@@ -2,7 +2,7 @@ from collections import Counter
 import wordcloud
 from matplotlib import pyplot as plt
 
-f = open(r'The_Left_Hand_of_Darkness.txt', encoding='utf-8')
+f = open(r'data/The_Left_Hand_of_Darkness.txt', encoding='utf-8')
 file_contents = f.read()
 
 
@@ -19,7 +19,6 @@ def calculate_frequencies(file_contents):
                            "must", "come", "got", "see", "still", "after", "get", "back", "even", "through", "most",
                            "much", "though", "made", "other", "yet", "while", "last", "before", "never", "between",
                            "left", "another", "might", "dont", "should", "these"]
-
 
     for character in file_contents:
         if character in punctuations:
